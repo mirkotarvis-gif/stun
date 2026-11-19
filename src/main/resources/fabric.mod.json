@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "stunpractice",
+	"version": "${version}",
+	"name": "Stun Practice",
+	"description": "Hit a shielding player with an axe and it clicks your mouse again after a delay you choose.",
+	"authors": [
+		"you"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/stunpractice/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.stunpractice.StunPracticeClient"
+		],
+		"modmenu": [
+			"dev.stunpractice.ModMenuIntegration"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}
